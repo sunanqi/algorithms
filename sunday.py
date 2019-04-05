@@ -1,3 +1,18 @@
+'''
+- Problem:
+    find substring in a string with an efficient way
+- Algorithm:
+    Sunday algorithm, a variation of Boyer–Moore algorithm
+- time complexity:
+    best Ω(n/m), worst O(mn). n = string length; m = pattern length
+    string search algorithm comparison: https://en.wikipedia.org/wiki/String-searching_algorithm
+input:
+    string s: long array of strings;
+    string p: pattern, normally a short array of string
+output:
+    int: the first index in s that matchs p. If no matches, return -1
+'''
+
 def sunday(s, p):
     '''
     sunday algorithm

@@ -1,10 +1,20 @@
+'''
+- Problem:
+    find substring in a string with an efficient way
+- Algorithm:
+    Knuth–Morris–Pratt algorithm, aka KMP.
+- time complexity:
+    O(n) + O(k), where n is the length of string and k is the length of substring(pattern)
+    string search algorithm comparison: https://en.wikipedia.org/wiki/String-searching_algorithm
+input:
+    string s: long array of strings;
+    string p: pattern, normally a short array of string
+output:
+    int: the first index in s that matchs p. If no matches, return -1
+'''
+
 def kmp(s, p):
     '''
-    input: s: long array of strings; p: pattern, normally a short array of string
-    output: find the first index in s that matchs p. If no matches, return -1
-    '''
-    '''
-    details https://blog.csdn.net/v_july_v/article/details/7041827
     first calculate next array.
     next array is the LPS (longest proper prefix which is also suffix) before this char
     pattern: A B C D A B D E
