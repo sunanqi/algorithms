@@ -1,4 +1,4 @@
-'''
+"""
 - Problem:
     Given an undirected, unweighted, connected graph, a "cut" is a partition of the vertices. We want to find the partition that has minimal edges between these two partitions.
 - Algorithm:
@@ -18,7 +18,7 @@
     a partition of vertices and its min cut
 - TODO:
     code runs slow, need optimize
-'''
+"""
 
 import random
 import math
