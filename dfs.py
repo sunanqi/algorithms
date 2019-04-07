@@ -5,7 +5,7 @@
     DFS
 - time complexity:
     O(V+E)
-    optimization: before bfs, convert adjacency list to iterator
+    optimization: before dfs, convert adjacency list to iterator
 - input:
     graph represented as adjacency list
 - output:
@@ -42,6 +42,7 @@ if __name__ == '__main__':
     finish_read_file = datetime.datetime.now()
     print('read file uses ', finish_read_file-start_read_file, 'seconds')
     print('total number of nodes:', len(G))
+    print('total number of edges:', sum(len(G[k]) for k in G))
     print('number of reachable nodes:', len(dfs(G,1)))
     finish_dfs = datetime.datetime.now()
     print('dfs uses ', finish_dfs - finish_read_file, 'seconds')
